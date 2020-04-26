@@ -1,0 +1,331 @@
+/***********GENERAL*********/
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+main {
+    min-height: calc (100vh - 178px - 148px);
+    padding-top: 70px;
+}
+
+/**********HEADER********/
+.header-container { 
+    background-color:  rgba(71, 71, 233, 0.952);
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+nav {
+    background-color: rgba(71, 71, 233, 0.952);
+    font-size: 15px;
+    padding: 8px;
+   float: right;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+ a  {
+    text-decoration: none;  
+    color: white; 
+   }
+ li{
+    display: inline-block;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+.brand {
+    width: 50px;
+}
+/***********HERO********/
+#hero {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom:50px;
+}
+#hero:after {
+    background: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)),
+                                     url("img-5.jpg");
+    content:"";
+    width: 100%;
+    height: 150%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size:cover;
+    top:0;
+    z-index: -5;
+    transform: skew(0deg, -6deg);
+}
+.hero-caption h1, h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    padding:5px;
+}
+
+.btn {
+    background-color: rgb(27, 121, 27);
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 0px;
+    transition: background .3s;
+    margin: 0px auto;
+}
+#hero h1 {
+    animation: slide-left;
+    animation-duration: 1s;
+    animation-timing-function: 2s;
+    animation-delay:  0.2s;
+    }
+#hero h2 {
+    animation: slide-right;
+    animation-duration: 1.5s;
+    animation-timing-function: 2s;
+    animation-delay: 0.2s;
+}
+#hero .btn {
+    animation: fade-in 2s 2s forwards ease-in;
+    opacity: 0;
+}
+/*********GALLERY********/
+#gallery .gallery {
+    width:60%;
+    margin:0 auto;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f0efed;
+    margin-top: -30px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 8px black;
+}
+.gallery  img {
+    top: 0;
+	right: 0;
+	width: 60%;
+} 
+p{
+    background-color: #f0efed;
+    margin-top: auto;
+    padding:8px;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.active {
+    background: rgb(86, 86, 218);;
+    border-radius: 10px ;
+}
+
+/*****ABOUT*********/
+#about .profile-pic {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#about .description {
+    float:right;
+    width: 50%;
+}
+#about h1 {
+    font-size: 15px;
+}
+#about p{
+    line-height: 13px;
+    text-align: center;
+}
+
+#about img {
+    width: 40%;
+    border-radius: 100%;
+    margin: 20px 0 0 20px;
+}
+#about {
+     margin-top:50px;
+    background-color: #f0efed;
+    width:100%;
+}
+/***********VIDEO*********/
+#video {
+    padding: 80px 0;
+}
+#video .container {
+    margin: auto;
+}
+#video video {
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#video-background .caption {
+    text-align: center;
+    padding: 120px 0;
+}
+#video-background {
+    position:relative;
+    overflow: hidden;
+}
+#video-background video{
+position: absolute;
+top:50%;
+width: 100%;
+z-index:-10;
+transform: translateY(-50%);
+}
+.caption p{
+    background: none;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0px auto;
+}
+
+
+
+/***********CONTATTI*********/
+.list li a {
+    color: black; 
+}
+.list {
+    display: block;
+}
+.list li {
+    display:block; 
+}
+.contact {
+    float: right;
+    width: 50%;
+    font-size: 14px;
+}
+.info {
+    float:left; 
+    width: 50%;
+    font-size: 14px;
+}
+.info p {
+line-height: 13px;
+font-size: 14px;
+text-align: left;
+background:none; 
+margin: 0px 0px 15px 10px;
+font-family: 'Baloo Bhaina 2', cursive;
+}
+#contatti h1 {
+  margin: 3px 0px 0px 35px;
+}
+.contact h1 {
+    text-align: center;
+}
+.list .material-icons {
+    font-size:14px;
+}
+
+#contatti {
+    margin:50px;
+}
+
+/********FOOTER******/
+footer.main {
+    clear:both;
+    position: relative;
+}
+.clearfix:after {
+    content:"";
+    clear:both;
+    display:table;
+}
+footer img {
+    width:20px;
+    margin-top: 70px;
+    text-align: center;
+} 
+.main p {
+   text-align: center;
+   font-size: 14px;
+   font-family: 'Baloo Bhaina 2', cursive;
+   width: 100%;
+}
+
+/*********MEDIA QUERIES********/
+@media only screen and (min-width:768px) {
+    #gallery .item {
+        flex: 0 1 33.33%;
+        justify-content: center;
+    
+    }
+     #contatti {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main-container {
+    margin-top: 20px;
+    }
+    }
+    @media only screen and (min-width:992px) {
+      nav li a {
+    transition: background .3s;
+      }
+      nav li a:hover, nav li a:active {
+    background:rgba(71, 71, 233, 0.952);
+    border-radius: 10px ;
+      }
+       .item a :hover{
+    transition: opacity .1;
+      }
+      header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      }
+      nav {
+    background:rgba(71, 71, 233, 0.952);
+        }
+    
+    }
+    @media only screen and (max-width:992px) {
+     header {
+        position: relative;
+     }
+     #main-container {
+        padding-top: 10px;
+        }
+    }
+    /*********ANIMATIONS********/
+
+    @keyframes fade-in {
+ 0%{
+     opacity: 0;
+ }
+ 100% {
+     opacity: 1;
+ }
+    }
+
+    @keyframes slide-left {
+0% {
+    opacity: 0;
+    transform: translateX(50px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+}
+    }
+
+    @keyframes slide-right {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
