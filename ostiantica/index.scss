@@ -1,0 +1,130 @@
+body {
+    font-size: 62.5%;
+     font-family: 'Nunito', sans-serif;
+     box-sizing: border-box;
+}
+
+/**************HEADER************/
+#header{
+    .header{
+        background-color: #9afc58;
+
+    }
+    .logo{
+        text-align: center;
+        img{
+            width:8%;
+        }
+    }
+    nav {
+        background-color:#7dff26;
+        padding:5px;
+    }
+    ul{
+        text-align: center;
+        margin:0px;
+        padding:3px;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        font-size:18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:white;
+        background:#59de00;
+        margin:10px;
+        border-radius:10px;
+        padding: 2px;
+    }
+    a:hover{
+        background:#41a300;
+    }
+}
+/**************HERO***************/
+.hero {
+    background: url(cuba1.jpg);
+}
+
+
+
+
+
+
+
+/****************GALLERY************/
+#gallery {
+
+    .gallery{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #dfe0de;
+        width:992px;
+        margin:10px auto;
+        
+        .item{
+            width:300px;
+            padding:15px 15px 0 15px;
+            a{
+                text-decoration: none;
+            }
+            img:hover{
+                opacity: 0.8;
+            }
+            p {
+                text-align: center;
+                font-size: 15px;
+                margin:1px 0 ;
+                font-weight: 700;
+                text-transform: none;
+                color:black;
+            }
+        }
+        img{
+           width:90%;
+        }
+    }
+}
+/****************ABOUT************/ 
+#about {
+    
+    .about{
+        width:90%;
+        
+        .picture{
+            width:40%;
+            float:left;
+            margin-left:40px;
+        }
+        img {
+            width:30%;
+            border-radius:100%;
+            margin: 40px auto;
+        }
+        .text{
+            margin-top:30px;
+            width:50%;
+            float:right;
+            p{
+                font-size:12px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:992px){
+    #gallery{
+        .gallery{
+            display:flex;
+            flex-wrap: wrap;
+        }
+    }
+}
